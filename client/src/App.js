@@ -20,7 +20,7 @@ function App() {
             <span className="author">Joel Abraham</span>
             <time>11/05/2023</time>
           </p>
-          <p>lerum ipsum dolor nfjfnjwn wefbwfjbwjfwf wkhfbhjwbf w nw h fhwbf</p>
+          <p className='summary'>lerum ipsum dolor nfjfnjwn wefbwfjbwjfwf wkhfbhjwbf w nw h fhwbf</p>
         </div>
       </div>
       <div className="post">

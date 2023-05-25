@@ -44,3 +44,15 @@ div.post div.texts h2{
   margin: 0;
   font-size: 1.6rem;
 }
+
+div.post p.info{
+  margin: 6px 0;
+  color: #888;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+div.post p.info a.author{
+  color:#111;
+}
