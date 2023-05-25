@@ -20,15 +20,7 @@ function App() {
     </Route>
     </Routes>
   </BrowserRouter>
-  // <HomePage/>
   );
 }
 
 export default App;
-
-// function HomePage(){
-//   return (    <main>
-//     <Post/>
-//     <Post/>
-//   </main>)
-// }
