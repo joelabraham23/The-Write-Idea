@@ -1,39 +1,34 @@
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Layout from './Layout';
+import HomePage from './components/HomePage';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 
 function App() {
   return (
-    <main>
-      <header>
-        <a href="/d" className="logo">MyBlog</a>
-        <nav>
-          <a href="/a">Login</a>
-          <a href="/a">Register</a>
-        </nav>
-      </header>
-      <div className="post">
-        <div className="image">
-          <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt="blog post"></img>
-        </div>
-        <div className="texts">
-          <h2>Full house blah blah blah</h2>
-          <p className='info'>
-            <span className="author">Joel Abraham</span>
-            <time>11/05/2023</time>
-          </p>
-          <p className='summary'>lerum ipsum dolor nfjfnjwn wefbwfjbwjfwf wkhfbhjwbf w nw h fhwbf</p>
-        </div>
-      </div>
-      <div className="post">
-        <div className="image">
-          <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt="blog post"></img>
-        </div>
-        <div className="texts">
-          <h2>Full house blah blah blah</h2>
-          <p>lerum ipsum dolor nfjfnjwn wefbwfjbwjfwf wkhfbhjwbf w nw h fhwbf</p>
-        </div>
-      </div>
-    </main>
+  <BrowserRouter> 
+    <Routes>
+    <Route path="/" element={<Layout/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path="/login" element={<LoginPage/>} />
+      <Route path="/register" element={<RegisterPage/>} />
+    </Route>
+    </Routes>
+  </BrowserRouter>
+  // <HomePage/>
   );
 }
 
 export default App;
+
+// function HomePage(){
+//   return (    <main>
+//     <Post/>
+//     <Post/>
+//   </main>)
+// }
